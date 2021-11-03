@@ -23,4 +23,4 @@ runs:
       run: |
         curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/aws-cloudformation/cloudformation-guard/main/install-guard.sh | sh
         PATH=$PATH:~/.guard/bin/
-        cfn-guard validate -r basic.rules -t ${{ inputs.cf_folder_path}}/${{ inputs.cf_file_path }}
+        cfn-guard validate -r basic.rules -d ${{ inputs.cf_folder_path}}/${{ inputs.cf_file_path }}
