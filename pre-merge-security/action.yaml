@@ -21,6 +21,6 @@ runs:
     - name: cloudformation guard
       shell: bash
       run: |
-        $ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/aws-cloudformation/cloudformation-guard/main/install-guard.sh | sh
+        curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/aws-cloudformation/cloudformation-guard/main/install-guard.sh | sh
         PATH=$PATH:~/.guard/bin/
         cfn-guard help
