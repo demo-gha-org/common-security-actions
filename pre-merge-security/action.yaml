@@ -19,7 +19,6 @@ runs:
       shell: bash
       run: |
        yarn
-       yarn cdk bootstrap
        yarn cdk synth -q -o ../configs/cdk
     - name: cloudformation guard
       shell: bash
